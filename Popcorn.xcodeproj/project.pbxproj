@@ -14,9 +14,11 @@
 		847A1AE1298C35430031C842 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 847A1AE0298C35430031C842 /* Assets.xcassets */; };
 		847A1AE4298C35430031C842 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 847A1AE2298C35430031C842 /* LaunchScreen.storyboard */; };
 		84BF9E8F298D662900D3255B /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BF9E8E298D662900D3255B /* MainPageViewController.swift */; };
+		CCE3BE16D20F8DF68B1C93A5 /* Pods_Popcorn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9C06D2B333F8F5CF87B9001 /* Pods_Popcorn.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		41DBC81451A355DC58570191 /* Pods-Popcorn.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Popcorn.release.xcconfig"; path = "Target Support Files/Pods-Popcorn/Pods-Popcorn.release.xcconfig"; sourceTree = "<group>"; };
 		847A1AD4298C35420031C842 /* Popcorn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Popcorn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		847A1AD7298C35420031C842 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		847A1AD9298C35420031C842 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +28,8 @@
 		847A1AE3298C35430031C842 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		847A1AE5298C35430031C842 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84BF9E8E298D662900D3255B /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
+		A9C06D2B333F8F5CF87B9001 /* Pods_Popcorn.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Popcorn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CFB91A46714A0ED03FC779C2 /* Pods-Popcorn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Popcorn.debug.xcconfig"; path = "Target Support Files/Pods-Popcorn/Pods-Popcorn.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCE3BE16D20F8DF68B1C93A5 /* Pods_Popcorn.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +49,8 @@
 			children = (
 				847A1AD6298C35420031C842 /* Popcorn */,
 				847A1AD5298C35420031C842 /* Products */,
+				E75AC4FD7AAE7905369B4C06 /* Pods */,
+				E04C111B8FC72565501D79F3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +77,24 @@
 			path = Popcorn;
 			sourceTree = "<group>";
 		};
+		E04C111B8FC72565501D79F3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A9C06D2B333F8F5CF87B9001 /* Pods_Popcorn.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E75AC4FD7AAE7905369B4C06 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CFB91A46714A0ED03FC779C2 /* Pods-Popcorn.debug.xcconfig */,
+				41DBC81451A355DC58570191 /* Pods-Popcorn.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 847A1AE8298C35430031C842 /* Build configuration list for PBXNativeTarget "Popcorn" */;
 			buildPhases = (
+				84559D05FE4DB0918281EB73 /* [CP] Check Pods Manifest.lock */,
 				847A1AD0298C35420031C842 /* Sources */,
 				847A1AD1298C35420031C842 /* Frameworks */,
 				847A1AD2298C35420031C842 /* Resources */,
+				397DED34091AB25CE61EBD59 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -135,6 +162,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		397DED34091AB25CE61EBD59 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Popcorn/Pods-Popcorn-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Popcorn/Pods-Popcorn-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Popcorn/Pods-Popcorn-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		84559D05FE4DB0918281EB73 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Popcorn-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		847A1AD0298C35420031C842 /* Sources */ = {
@@ -286,6 +355,7 @@
 		};
 		847A1AE9298C35430031C842 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFB91A46714A0ED03FC779C2 /* Pods-Popcorn.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -314,6 +384,7 @@
 		};
 		847A1AEA298C35430031C842 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41DBC81451A355DC58570191 /* Pods-Popcorn.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
